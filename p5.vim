@@ -2,4 +2,4 @@
 "sketches
 au BufRead,BufNewFile *.pde set filetype=java
 
-:command P5 :! processing-java --sketch=$PWD/ --output=/home/ray/tmp/ --run --force
+nmap <leader>p :! processing-java --sketch=$PWD/%:h --output=/tmp/processing/ --force --run<CR>
